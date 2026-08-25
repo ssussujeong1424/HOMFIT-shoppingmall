@@ -1,11 +1,6 @@
-header{
-    border:1px solid red;
-}
 
 .header-top{
-    border:1px solid red;
     &>.common-frame{
-        border:1px solid blue;
         display:flex;
         justify-content: space-between;
     }
@@ -14,4 +9,88 @@ header{
 .user-menu{
     display:flex;
     gap:1rem;
+}
+
+.user-menu a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:0.25rem;
+}
+
+.lnb{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    height:6.25rem;
+}
+
+.user-menu img{
+    height:1.5rem;
+}
+
+.user-menu{
+    font-size: var(--fs-body2);
+}
+
+.gnb2depth{
+    position:absolute;
+    left:0;
+    top:50px;
+    width:100%;
+    background-color: #fff;
+    padding: 1.75rem 0;
+    display: none;
+    box-shadow: 0 10px 10px rgba(206, 206, 206, 0.961);
+}
+
+.gnb>li:hover .gnb2depth{
+    display:block;
+}
+
+.gnb2depth .common-frame{
+    display:flex;
+    gap:var(--space-normal);
+}
+
+.gnb2depth .common-frame>section{
+    flex:1;
+}
+
+.gnb2depth .common-frame>section h4{
+    margin-bottom:1.5rem;
+}
+
+.gnb2depth .common-frame>section ul{
+    display:flex;
+    flex-direction: column;
+    gap:var(--space-normal);
+    font-weight:var(--fw1);
+}
+
+.gnb2depth a:hover{color:var(--sub-color);}
+
+.header-bottom{
+    background-color: #F8EDE3;
+    position:relative;
+}
+
+.gnb{
+    display:flex;
+    gap: var(--space-normal);
+    height: 50px;
+    font-weight:var(--fw2);
+}
+
+.gnb>li>a{
+    display: flex;
+    height:100%; 
+    /* flex로 박스형태가 되면서 너비 높이 설정가능해짐 */
+    align-items: center;
+}
+
+.gnb>li>a:hover{
+    color: var(--sub-color);
 }
