@@ -1,0 +1,16 @@
+header{
+    border:1px solid red;
+}
+
+.header-top{
+    border:1px solid red;
+    &>.common-frame{
+        border:1px solid blue;
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+.user-menu{
+    display:flex;
+}
