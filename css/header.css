@@ -13,4 +13,5 @@ header{
 
 .user-menu{
     display:flex;
+    gap:1rem;
 }
