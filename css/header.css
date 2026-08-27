@@ -1,5 +1,9 @@
-.header{
-    
+header{
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 100;
+    width:100%;
 }
 
 .smart-overlay-menu{display:none;}
@@ -9,6 +13,7 @@
         display:flex;
         justify-content: space-between;
     }
+    background-color: #fff;
 }
 
 .user-menu{
@@ -108,8 +113,13 @@
     .pc{display:none;}
     .smart-header{
         display:block;
-        border:1px solid red;
+        height:5rem;
+        position:fixed;
+        width:100%;
+        left:0;
+        top:0;
     }
+    .logo img{height:5rem;}
     .smart-header .common-frame{
         display:flex;
         align-items: center;
@@ -122,7 +132,6 @@
         right:2rem;
         top:50%;
         transform: translateY(-50%);
-        border:1px solid blue;
         line-height: 0;
     }
 
@@ -137,6 +146,7 @@
         flex-direction:column;
         transform: translateX(100%);
         transition: all 0.6s ease 0s;
+        z-index:110;
     }
 
     .smart-overlay-menu.on{
@@ -190,7 +200,6 @@
 
 
     .smart-overlay-menu-bottom{
-        border:10px solid green;
         flex-grow: 1;
         overflow-y: auto;
     }

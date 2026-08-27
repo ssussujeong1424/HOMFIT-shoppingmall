@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
+    <!-- 데스크탑용 헤더 -->
     <header class="pc">
         <div class="header-top">
             <div class="common-frame">
@@ -351,7 +355,7 @@
             </div>
         </div>
     </div>
-
+    <!-- 패드 / 모바일용 전체 메가 메뉴 -->
     <div class="smart-overlay-menu">
         <div class="smart-overlay-menu-1">
             <div class="common-frame">
@@ -407,7 +411,7 @@
             <div class="common-frame">
                 <ul class="gnb-smart">
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">NEW</a></li>
+                    <li class="on"><a href="#">NEW</a></li>
                     <li><a href="#">SHOP</a></li>
                     <li><a href="#">COLLECTION</a></li>
                     <li><a href="#">LOOKBOOK</a></li>
@@ -417,7 +421,7 @@
             </div>
         </div>
         <div class="smart-overlay-menu-bottom">
-            <div class="gnb2depth-smart">
+            <div class="gnb2depth-smart on">
                 <div class="common-frame">
                     <section>
                         <h4><a href="#">신상품</a></h4>
@@ -672,6 +676,60 @@
             </div>
         </div>
     </div>
+
+    <main>
+            <!-- 히어로 배너 슬라이드, class 이름 정해주기, swiper js -->
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class='pc' src="./img/11번.jpg" alt="shop collection">
+                        <img class='pad' src="./img/14번.jpg" alt="shop collection">
+                        <img class='mo' src="./img/17번.jpg" alt="shop collection">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='pc' src="./img/12번.jpg" alt="view sale">
+                        <img class='pad' src="./img/15번.jpg" alt="view sale">
+                        <img class='mo' src="./img/18번.jpg" alt="view sale">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class='pc' src="./img/13번.jpg" alt="explore now">
+                        <img class='pad' src="./img/16번.jpg" alt="explore now">
+                        <img class='mo' src="./img/19번.jpg" alt="explore now">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        
+            <script>
+                const station = new Swiper('.hero-slider',{
+                    loop:true,
+                    pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                 autoplay: {
+                  delay: 4000,
+                  disableOnInteraction: false,
+                },
+                speed:1000,
+                });
+            </script>
+        
+            <div class="banner-line">
+                <div class="common-frame">
+                    <span>NOTICE</span>
+                    <h4>HOMFIT의 새로운 소식을 확인해보세요</h4>
+                    <p>지금 알아두면 좋은 공지사항과 브랜드 소식을 만나보세요</p>
+                    <a href="#" class="btn-style">
+                        VIEW NOTICE
+                        <img src="./img/stash_arrow-right-light.svg" alt="공지사항 바로가기">
+                    </a>
+                </div>
+            </div>
+    </main>
+
+
 </body>
 
 </html>
