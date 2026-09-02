@@ -128,6 +128,128 @@
     transform: scale(1.1);
 }
 
+.review-story>li>figure{
+    line-height: 0;
+    border-radius:0.5rem;
+    overflow: hidden;
+    margin-bottom:1.75rem;
+}
+
+.story-txt{
+    border-bottom: 1px dotted var(--gray-300);
+    padding-bottom: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-bottom:2rem;
+}
+
+.story-txt h4{
+    font-weight: var(--fw2);
+}
+
+.story-txt h4+p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.story-product figure{
+    width:6.25rem;
+    height:6.25rem;
+    border-radius: 0.5rem;
+    overflow:hidden;
+    position:relative;
+}
+
+.like-badge{
+    position:absolute;
+    right:0.25rem;
+    top:0.25rem;
+    font-size: var(--fs-body2);
+    display:flex;
+    align-items: center;  
+
+}
+
+.story-product>a{
+    display:flex;
+    gap:1rem;
+}
+
+.product-name{
+    margin-bottom:.5rem;
+    color:var(--gray-800);
+    font-weight:var(--fw2);
+}
+
+.product-category{
+    margin-bottom: .5rem;
+    color:var(--gray-700);
+}
+
+.pay-original{
+    color:var(--gray-500);
+    font-size: var(--fs-body2);
+}
+
+.pay-original span{
+    text-decoration: line-through;
+}
+
+.pay-discount{
+    display:flex;
+    align-items: center;
+    gap:0.5rem;
+}
+
+.discount{
+    font-size: var(--fs-body2);
+}
+
+.pay{
+    color: var(--red);
+}
+
+.sale{
+    display:grid;
+    grid-template-columns: repeat(4,minmax(50px,1fr));
+    gap:3rem 1rem;
+}
+
+.con3{
+    padding:6rem 0;
+}
+
+.sale li figure{
+    line-height:0;
+    margin-bottom: 1.75rem;
+}
+
+.sale li figure img{
+    aspect-ratio: 1/1;
+    width:100%;
+    object-fit: cover;
+    border-radius:0.5rem;
+}
+
+.like-badge.noab{
+    position:initial;
+}
+
+.sale-txt{
+    display:flex;
+    flex-direction: column;
+    gap:.5rem;
+}
+
+
+
+
+
+
 @media (max-width:1250px){
     .banner-line .common-frame{
     justify-content: space-between;
@@ -155,6 +277,11 @@
     width:100%;
     height:500px;
 }
+
+ .sale{
+    grid-template-columns: repeat(2,minmax(50px,1fr));
+    }
+
 }
 
 @media (max-width:340px){

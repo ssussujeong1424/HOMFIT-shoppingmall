@@ -56,6 +56,7 @@
 
     /* 서브컬러 */
     --sub-color:#C5705D;
+    --red:#D30404;
 
 }
 
@@ -63,7 +64,7 @@ h1{font-size:var(--fs-h1);}
 h2{font-size:var(--fs-h2);}
 h3{font-size:var(--fs-h3);}
 h4{font-size:var(--fs-h4);}
-
+p{line-height:var(--lh2);}
 
 html{
     font-size:var(--fs-pc);
@@ -83,6 +84,24 @@ main{
 .pc{display:block;}
 .pad{display:none;}
 .mo{display:none;}
+
+
+.title-1{
+    font-weight: var(--fw2);
+}
+
+.desc-1{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:var(--gray-700);
+}
+
+
+
+
 
 
 @media (max-width:1024px){
