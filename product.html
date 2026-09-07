@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,12 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
 
-    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/product.css">
     <script src="./js/header.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/new-product.js" defer></script>
-    <script src="./js/product-control-new.js" defer></script>
 
 </head>
 
@@ -686,53 +685,124 @@
 
 
     <main>
-
-        <div class="hero-banner">
-            <a href="#">
-                <picture>
-                    <source media="(max-width:768px)" srcset="./img/hero-mo-768.jpg">
-                    <source media="(max-width:1024px)" srcset="./img/hero-tab.jpg">
-                    <img src="./img/hero-pc.jpg" alt="HF 쇼핑몰 신상품 배너 이미지">
-                </picture>
-            </a>
-        </div>
-
-        <section class="con1">
+        <section class="info-product">
             <div class="common-frame">
-                 <div class="title">
-                    <h1>NEW MOOD, NEW HOME</h1>
-                    <span></span>
-                    <p>당신의 일상에 스며드는 편안함</p>
+                <div class="product-img">
+                    <figure class="thumbnail-big">
+                        <img src="./img/big-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형)">
+                    </figure>
+                    <div class="horizontal-scroll-gallery">
+                        <div class="train-horizontal">
+                            <figure><img src="./img/small-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 1번 사진"></figure>
+                            <figure><img src="./img/small-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 2번 사진"></figure>
+                            <figure><img src="./img/small-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 3번 사진"></figure>
+                            <figure><img src="./img/small-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 4번 사진"></figure>
+                            <figure><img src="./img/small-thumnail.jpg" alt="내추럴 우드 3단 책장 800 내추럴오크(조립형) 5번 사진"></figure>
+                        </div>
+                    </div>
                 </div>
-
-                <ul class="new-product grid-list">
-                    <li>
-                        <a href="#">
-                            <figure>
-                                <img src="./img/N1.jpg" alt="코지 부클레 1인 라운지 체어">
-                            </figure>
-                            <div class="sale-txt">
-                                <h4 class="title-1">코지 부클레 1인 라운지 체어</h4>
-                                <p class="desc-1">포근한 부클레 원단과 아늑한 라운드 디자인으로 완벽한 휴식을 선사합니다</p>
-                                <div class="pay-frame">
-                                    <div class="pay-original">
-                                        <span>280,000</span>원
+                <div class="product-txt">
+                    <div class="product-name">
+                        <span class="category-badge">NEW</span>
+                        <div class="product-title">[홈핏] 내추럴 우드 3단 책장 800 내추럴오크 (조립형)</div>
+                    </div>
+                    <div class="pay-frame">
+                        <div class="pay-original">
+                            <span>249,000</span>원
+                        </div>
+                        <div class="pay-discount">
+                            <div class="discount">28%</div>
+                            <div class="pay"><b>179,000</b>원</div>
+                        </div>
+                    </div>
+                    <dl class="benefit">
+                        <dt>회원혜택</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>상품 할인</span>
+                                    <div class="price-benefit">
+                                        <span><b>179,000</b>원 <i>28%</i></span>
                                     </div>
-                                    <div class="pay-discount">
-                                        <div class="discount">10%</div>
-                                        <div class="pay"><b>530,100</b>원</div>
+                                </li>
+                                <li>
+                                    <span>장바구니 할인</span>
+                                    <div class="price-benefit">
+                                        <span><b>168,260</b>원 <i>6%</i></span>
+                                        <p>주문서 작성 시 가격 적용됩니다.</p>
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-coupon">
+                                전체 쿠폰 받기
+                                <img src="./img/icon-download.svg" alt="쿠폰 받기">
+                            </a>
+                        </dd>
 
+                         <dt>추가혜택</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>무이자할부</span>
+                                    <div class="desc-benefit">
+                                        할부금 월 29,834원 (최대 6개월)
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>카드</span>
+                                    <div class="desc-benefit">
+                                        삼성카드 169,000원 (10,000원 즉시할인)
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">
+                               더보기
+                            </a>
+                        </dd>
 
+                         <dt>포인트</dt>
+                        <dd>
+                            <ul class="benefit-list">
+                                <li>
+                                    <span>HOMFIT Point</span>
+                                    <div class="desc-benefit">
+                                        179P (0.1%) 적립 예정
+                                        <p>홈핏 멤버스 회원 시 적립 가능합니다.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">
+                               더보기
+                            </a>
+                        </dd>
+
+                        <dt>배송정보</dt>
+                        <dd>
+                           <p class="delivery-info">무료(전국) / 내일 출발, 오전 주문 시</p>
+                        </dd>
+                        <dd>
+                            <a href="#" class="btn-link">
+                               자세히보기
+                            </a>
+                        </dd>
+                    </dl>
+                    <div class="pay-info">
+                        총 합계금액 <b>179,000</b>원
+                        <p class="tip-info">※ 회원 혜택가는 로그인 후, 주문서 작성시 적용 가능합니다.</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="#" class="btn-cart">장바구니</a>
+                        <a href="#" class="btn-buy">구매하기</a>
+                    </div>
+                </div>
             </div>
         </section>
-
-
     </main>
 
 
@@ -797,7 +867,6 @@
             <div class="copy">© 2026 homfit. All rights reserved. 취업용도의 포트폴리오 홈페이지입니다.</div>
         </div>
     </footer>
-
 </body>
 
 </html>

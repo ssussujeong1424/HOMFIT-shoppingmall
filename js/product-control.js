@@ -14,7 +14,7 @@ let result = productArray.map(product => {
                                     </div>
                                     <div class="pay-discount">
                                         <div class="discount">${Math.round(product.pdiscount*100)}%</div>
-                                        <div class="pay"><b>${formatMoney(product.price*product.pdiscount)}</b>원</div>
+                                        <div class="pay"><b>${formatMoney(product.price*(1-product.pdiscount))}</b>원</div>
                                     </div>
                                 </div>
                                 <span class="like-badge noab"><img src="./img/heart-1.svg" alt="좋아요하트">${product.plikes}</span>
