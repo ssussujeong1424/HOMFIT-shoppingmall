@@ -3,6 +3,7 @@
 body{
     width:100%;
     max-width:1920px;
+    margin:0 auto;
 }
 
 .together{
@@ -12,7 +13,7 @@ body{
     align-items: center;
     padding:2rem 0;
     margin: 8rem 0;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .tgt-top ul{
@@ -57,7 +58,7 @@ body{
     gap:3rem;
 }
 
-.tgt-catpion-2{
+.tgt-caption-2{
     display: flex;
     flex-direction: column;
     gap:1rem;
