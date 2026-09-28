@@ -414,6 +414,19 @@ object-fit: cover;
     color:var(--gray-700);
 }
 
+/* 리뷰 */
+.no-review{
+    display:flex;
+    height:300px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8EDE3;
+    color: var(--gray-600);
+    border-radius: 1rem;
+    font-size: var(--fs-body1);
+    font-weight: var(--fw1);
+}
+
 
 /* ctrl/shift/c 개발자 창에서 수정해서 copy+rule*/
 @media(max-width:1400px){

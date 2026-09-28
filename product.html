@@ -39,6 +39,8 @@
     <script src="./js/product-ui.js" defer></script>
     <script src="./js/parameter.js"></script>
     <script src="./js/won.js"></script>
+    <script src="./js/review.js"></script>
+    <script src="./js/review-control.js" defer></script>
 
 </head>
 
@@ -48,7 +50,12 @@
         const productInfo = newProductArray.find(function(item){
             return item.pid === Number(getParameter('pid'))
         })
-        console.log(productInfo);
+
+        const reviewInfo=reviewArray.filter(function(item){
+            return item.pid === Number(getParameter('pid'))
+        })
+
+        console.log(reviewInfo)
     </script>
 
     <!-- 데스크탑용 헤더 -->
@@ -1005,12 +1012,12 @@
                                 </div>
                                 <div class="review-img">
                                     <ul class="review-gallery">
-                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
-                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
-                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
-                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
-                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
-                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                        <li><img src="./img/reivew/rev1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/reivew/rev2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/reivew/rev3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/reivew/rev4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/reivew/rev5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/reivew/rev6.jpg" alt="리뷰이미지6"></li>
                                     </ul>
                                 </div>
                                 <div class="review-etc">
@@ -1042,12 +1049,12 @@
                                 </div>
                                 <div class="review-img">
                                     <ul class="review-gallery">
-                                        <li><img src="./img/review1.jpg" alt="리뷰이미지1"></li>
-                                        <li><img src="./img/review2.jpg" alt="리뷰이미지2"></li>
-                                        <li><img src="./img/review3.jpg" alt="리뷰이미지3"></li>
-                                        <li><img src="./img/review4.jpg" alt="리뷰이미지4"></li>
-                                        <li><img src="./img/review5.jpg" alt="리뷰이미지5"></li>
-                                        <li><img src="./img/review6.jpg" alt="리뷰이미지6"></li>
+                                        <li><img src="./img/rev1.jpg" alt="리뷰이미지1"></li>
+                                        <li><img src="./img/rev2.jpg" alt="리뷰이미지2"></li>
+                                        <li><img src="./img/rev3.jpg" alt="리뷰이미지3"></li>
+                                        <li><img src="./img/rev4.jpg" alt="리뷰이미지4"></li>
+                                        <li><img src="./img/rev5.jpg" alt="리뷰이미지5"></li>
+                                        <li><img src="./img/rev6.jpg" alt="리뷰이미지6"></li>
                                     </ul>
                                 </div>
                                 <div class="review-etc">
